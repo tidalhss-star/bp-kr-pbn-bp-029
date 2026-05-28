@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <title>정보 | 구로 홈페이지 빌더 전문</title>
+    <meta name="description" content="구로구 중심의 프리미엄 웹 빌더 '정보'입니다. 복잡한 코드 없이도 브랜드의 이야기를 세련되게 담아내는 법을 알려드립니다.">
+    <meta name="keywords" content="구로 홈페이지 빌더, 구로 웹디자인, 홈페이지 제작, 슬로건 디자인, 구로구 웹사이트, 반응형 웹, 브랜드 스토리텔링, 웹 표준">
+    <link rel="canonical" href="https://kr-pbn-bp-029.pages.dev/information">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kr-pbn-bp-029.pages.dev/information">
+    <meta property="og:title" content="정보 | 구로 홈페이지 빌더 전문">
+    <meta property="og:description" content="구로구 중심의 프리미엄 웹 빌더 '정보'입니다. 복잡한 코드 없이도 브랜드의 이야기를 세련되게 담아내는 법을 알려드립니다.">
+    <meta property="og:image" content="https://kr-pbn-bp-029.pages.dev/assets/og-image.jpg">
+    <style>
+        :root {
+            --font-main: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            --font-serif: 'Noto Serif KR', serif;
+            --color-bg: #ffffff;
+            --color-text: #1a1a1a;
+            --color-muted: #666666;
+            --color-accent: #c5a059; /* Gold */
+            --color-border: #e5e5e5;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+            --header-height: 80px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--color-accent);
+        }
+
+        header {
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: var(--header-height);
+                left: 0;
+                width: 100%;
+                background: #fff;
+                padding: 2rem;
+                border-bottom: 1px solid var(--color-border);
+                gap: 1.5rem;
+                text-align: center;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        main {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        section {
+            margin-bottom: 6rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--color-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            padding: 2rem;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-accent);
+        }
+
+        .card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: var(--color-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* FAQ Section */
+        .faq-section h2 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--color-border);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--color-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #f9f9f9;
+            padding: 4rem 5%;
+            text-align: center;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .footer-info {
+            color: var(--color-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .tel-link {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--color-text);
+            display: inline-block;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 0.2rem;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">Guro Builder.</a>
+        <div class="menu-toggle">☰</div>
+        <nav>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/services">서비스</a></li>
+                <li><a href="/portfolio">포트폴리오</a></li>
+                <li><a href="/information">정보</a></li>
+                <li><a href="/contact">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>웹의 본질을<br>이야기하다</h1>
+            <p>단순한 제작을 넘어, 구로구의 브랜드가 가진 고유한 가치를<br>디지털 공간에 어떻게 녹여낼지 고민합니다.</p>
+        </section>
+
+        <!-- Information Cards -->
+        <section class="info-grid content-grid">
+            <div class="card">
+                <h3>01. 브랜드 스토리텔링</h3>
+                <p>홈페이지는 단순한 정보 전달 수단이 아닙니다. 당신의 브랜드가 걸어온 길과 앞으로 나아갈 방향을 내러티브로 풀어냅니다. 구로구의 로컬 비즈니스가 가진 따뜻한 감성을 디지털 톤앤매너로 승화시킵니다.</p>
+            </div>
+            <div class="card">
+                <h3>02. 사용자 경험 (UX)</h3>
+                <p>방문자가 처음 사이트에 들어왔을 때 느끼는 '감각'을 설계합니다. 복잡한 메뉴는 과감히 덜어내고, 고객이 원하는 정보에 가장 빠르게 도달할 수 있는 직관적인 동선을 만듭니다.</p>
+            </div>
+            <div class="card">
+                <h3>03. 반응형 최적화</h3>
+                <p>스마트폰, 태블릿, 데스크탑 어디서든 완벽한 몰입감을 제공합니다. 구로구 주민들이 주로 사용하는 모바일 환경에 최적화된 레이아웃으로, 작은 화면에서도 브랜드의 품격을 유지합니다.</p>
+            </div>
+        </section>
+
+        <!-- Editorial Content -->
+        <section class="editorial-content">
+            <h2 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 2rem; text-align: center;">왜 '구로 홈페이지 빌더'인가?</h2>
+            <div style="max-width: 800px; margin: 0 auto; color: var(--color-muted); line-height: 1.8;">
+                <p style="margin-bottom: 1.5rem;">
+                    솔직히 말해서, 웹 개발은 꽤 복잡할 수 있습니다. 하지만 우리는 그 복잡함을 당신 대신 떠안기로 했습니다. 구로구에서 사업을 하시는 분들에게 필요한 건 화려한 코드가 아니라, 고객을 진심으로 대하는 태도니까요.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    우리는 '빌더 (Builder)'라는 단어에 집중합니다. 단순히 사이트를 쌓아 올리는 게 아니라, 당신의 비즈니스를 지탱할 단단한 기반을 함께 만든다는 의미입니다. 에디토리얼 잡지를 읽는 듯한 세련된 디자인과, 친근한 이웃처럼 다정한 콘텐츠 구성. 이것이 우리가 지향하는 구로구형 웹 표준입니다.
+                </p>
+                <p>
+                    기술적인 용어는 최소화하고, 브랜드의 철학은 극대화했습니다. 당신의 이야기가 더 많은 사람에게 닿을 수 있도록, 우리는 오늘도 구로구의 거리에서 영감을 얻습니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>자주 묻는 질문</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>홈페이지 제작 기간은 얼마나 걸리나요?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    보통 2 주에서 4 주 정도 소요됩니다. 브랜드의 방향성을 잡는 기획 단계가 가장 중요하기 때문에, 서두르기보다 완성도에 집중합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>유지보수는 어떻게 하나요?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    제작 완료 후에도 꾸준히 관리해 드립니다. 콘텐츠 수정이나 기능 추가가 필요할 때 언제든 편하게 연락 주세요. 구로구 근처라면 직접 방문 상담도 가능합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>모바일에서도 잘 보이나요?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    네, 완벽합니다. 최근 방문자의 80% 이상이 모바일을 사용하기 때문에, 모바일 환경에서의 가독성과 사용성을 최우선으로 설계합니다.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-logo">Guro Builder.</span>
+            <div class="footer-info">
+                서울특별시 구로구 디지털로 33 길<br>
+                Premium Web Design Studio
+            </div>
+            <a href="tel:02-1234-5678" class="tel-link">02-1234-5678</a>
+            <div class="copyright">
+                &copy; 2024 Guro Homepage Builder. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
