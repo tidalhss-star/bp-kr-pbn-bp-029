@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[구로 구로 홈페이지 빌더 전문]]></title>
-  <link>https://kr-pbn-bp-029.pages.dev</link>
-  <description><![CDATA[구로 홈페이지 빌더 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 17:31:11 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 17:31:11 GMT</lastBuildDate>
-  <atom:link href="https://kr-pbn-bp-029.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[홈페이지 빌더]]></title>
+  <link>https://tidalhss-star.github.io/bp-kr-pbn-bp-029</link>
+  <description><![CDATA[홈페이지 빌더 - 구로 홈페이지 빌더 전문 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 00:05:46 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 00:05:46 GMT</lastBuildDate>
+  <atom:link href="https://tidalhss-star.github.io/bp-kr-pbn-bp-029/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[구로 구로 홈페이지 빌더 전문 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://kr-pbn-bp-029.pages.dev/</link>
-      <guid isPermaLink="true">https://kr-pbn-bp-029.pages.dev/</guid>
-      <description><![CDATA[구로 홈페이지 빌더 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 17:31:11 GMT</pubDate>
+      <title><![CDATA[구로 홈페이지 빌더 전문 경험자에게 물어본 현실적인 판단 기준]]></title>
+      <link>https://tidalhss-star.github.io/bp-kr-pbn-bp-029/posts/interview-002-l6tsj3.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-kr-pbn-bp-029/posts/interview-002-l6tsj3.html</guid>
+      <description><![CDATA[### 포스트 메타정보포스트 기획 테마: 구로 홈페이지 빌더 전문 경험자에게 물어본 현실적인 판단 기준 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 공식 가이드 채널 아, 진짜, 2023년 겨울, 홍대 상권에서 폐업한 업소들의 공통된 원]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[구로 홈페이지 빌더 전문에 대한 니트링 클래스 카드 변화 이해]]></title>
+      <link>https://tidalhss-star.github.io/bp-kr-pbn-bp-029/posts/myth-001-l6tsj3.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-kr-pbn-bp-029/posts/myth-001-l6tsj3.html</guid>
+      <description><![CDATA[아, 진짜... 글룸헤이븐 1판과 2판 사이에 클래스 카드 변경된 7종 중 스탯 차이는 크게 다르지 않았습니다. 하지만 밸런스가 개선되었는지는 다양한 조건을 통해 확인해야 합니다. ### 구체적 맥락#### 버전별 클래스 카드 변화의 이해1판과 2판 사이에 변경된 카드]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
