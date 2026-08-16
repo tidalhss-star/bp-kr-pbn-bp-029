@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · kr-pbn-bp-029</title>
+  <meta name="description" content="kr-pbn-bp-029에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://guro-web-guide.pbn-builder.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --font-main: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+ --font-serif: 'Noto Serif KR', serif;
+ --color-bg: #ffffff;
+ --color-text: #1a1a1a;
+ --color-muted: #666666;
+ --color-accent: #c5a059; /* Gold */
+ --color-border: #e5e5e5;
+ --spacing-unit: 1rem;
+ --container-width: 1200px;
+ --header-height: 80px;
+ }
+
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: var(--font-main);
+ background-color: var(--color-bg);
+ color: var(--color-text);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ a {
+ text-decoration: none;
+ color: inherit;
+ transition: color 0.3s ease;
+ }
+
+ a:hover {
+ color: var(--color-accent);
+ }
+
+ header {
+ height: var(--header-height);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 5%;
+ border-bottom: 1px solid var(--color-border);
+ position: sticky;
+ top: 0;
+ background: rgba(255, 255, 255, 0.95);
+ backdrop-filter: blur(10px);
+ z-index: 1000;
+ }
+
+ .logo {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ }
+
+ nav ul {
+ display: flex;
+ list-style: none;
+ gap: 2rem;
+ }
+
+ nav a {
+ font-size: 0.95rem;
+ font-weight: 500;
+ color: var(--color-text);
+ }
+
+ /* Mobile Menu */
+ .menu-toggle {
+ display: none;
+ font-size: 1.5rem;
+ cursor: pointer;
+ }
+
+ @media (max-width: 768px) {
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: var(--header-height);
+ left: 0;
+ width: 100%;
+ background: #fff;
+ padding: 2rem;
+ border-bottom: 1px solid var(--color-border);
+ gap: 1.5rem;
+ text-align: center;
+ }
+
+ nav ul.active {
+ display: flex;
+ }
+
+ .menu-toggle {
+ display: block;
+ }
+ }
+
+ main {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 4rem 5%;
+ }
+
+ section {
+ margin-bottom: 6rem;
+ }
+
+ /* Hero Section */
+ .hero {
+ text-align: center;
+ padding: 6rem 0;
+ border-bottom: 1px solid var(--color-border);
+ }
+
+ .hero h1 {
+ font-family: var(--font-serif);
+ font-size: 3.5rem;
+ font-weight: 400;
+ margin-bottom: 1.5rem;
+ letter-spacing: -0.03em;
+ line-height: 1.2;
+ }
+
+ .hero p {
+ font-size: 1.2rem;
+ color: var(--color-muted);
+ max-width: 600px;
+ margin: 0 auto;
+ }
+
+ /* Content Grid */
+ .content-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 3rem;
+ margin-top: 3rem;
+ }
+
+ .card {
+ padding: 2rem;
+ border: 1px solid var(--color-border);
+ border-radius: 4px;
+ transition: transform 0.3s ease, border-color 0.3s ease;
+ }
+
+ .card:hover {
+ transform: translateY(-5px);
+ border-color: var(--color-accent);
+ }
+
+ .card h3 {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ margin-bottom: 1rem;
+ }
+
+ .card p {
+ color: var(--color-muted);
+ font-size: 0.95rem;
+ line-height: 1.7;
+ }
+
+ /* FAQ Section */
+ .faq-section h2 {
+ font-family: var(--font-serif);
+ font-size: 2.5rem;
+ margin-bottom: 2rem;
+ text-align: center;
+ }
+
+ .faq-item {
+ border-bottom: 1px solid var(--color-border);
+ padding: 1.5rem 0;
+ }
+
+ .faq-question {
+ font-weight: 600;
+ font-size: 1.1rem;
+ margin-bottom: 0.5rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .faq-answer {
+ color: var(--color-muted);
+ font-size: 0.95rem;
+ line-height: 1.6;
+ }
+
+ footer {
+ background-color: #f9f9f9;
+ padding: 4rem 5%;
+ text-align: center;
+ border-top: 1px solid var(--color-border);
+ }
+
+ .footer-content {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ }
+
+ .footer-logo {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ font-weight: 700;
+ margin-bottom: 1rem;
+ display: block;
+ }
+
+ .footer-info {
+ color: var(--color-muted);
+ font-size: 0.9rem;
+ margin-bottom: 2rem;
+ }
+
+ .tel-link {
+ font-size: 1.2rem;
+ font-weight: 600;
+ color: var(--color-text);
+ display: inline-block;
+ margin-bottom: 2rem;
+ border-bottom: 2px solid var(--color-accent);
+ padding-bottom: 0.2rem;
+ }
+
+ .copyright {
+ font-size: 0.8rem;
+ color: #999;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · kr-pbn-bp-029">
+  <meta property="og:description" content="kr-pbn-bp-029에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://guro-web-guide.pbn-builder.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <a href="/" class="logo">Guro Builder.</a>
+ <div class="menu-toggle">☰</div>
+ <nav>
+ <ul>
+ <li><a href="/">홈</a></li>
+ <li><a href="/about">소개</a></li>
+ <li><a href="/services">서비스</a></li>
+ <li><a href="/portfolio">포트폴리오</a></li>
+ <li><a href="/information">정보</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 29개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0170.html">구로 홈페이지 빌더 전문 기술로 보는 망원 노래방 추천정보의 진실</a>
+        <p class="post-item__summary">노래방은 늦은 밤에만 가야 한다는 고정관념은 현대의 다양한 레저 문화와 거리가 멉니다. 구로 홈페이지 빌더 전문 제작 시스템이 낮과 밤의 구분 없이 상시 운용되듯, 도심 속의 노래방 또한 사용자가 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0171.html">구로 홈페이지 빌더 전문 환경 구축과 홍대 노래방 추천정보 핵심</a>
+        <p class="post-item__summary">청결한 시설, 우수한 음향 기기, 넓은 수용 공간은 노래방을 결정할 때 필수적으로 따져봐야 할 3요소입니다. 마치 구로 홈페이지 빌더 전문 도구가 기능의 확장성과 안정성을 갖춰야 하는 것과 같은 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0172.html">구로 홈페이지 빌더 전문 시스템 도입과 공덕 셔츠룸 추천정보</a>
+        <p class="post-item__summary">혹시 새로운 공간을 선택할 때 무엇을 가장 우선순위로 두십니까? 구로 홈페이지 빌더 전문 기술을 활용해 최적의 플랫폼을 만드는 것처럼, 셔츠룸 역시 운영 철학이나 서비스 표준을 보고 선택하는 것이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0173.html">구로 홈페이지 빌더 전문 활용한 연남 유흥 추천정보 확인 절차</a>
+        <p class="post-item__summary">디지털 환경에서 특정 지역의 정보를 얻는 과정은 구로 홈페이지 빌더 전문적인 시스템을 설계하는 논리와 유사하게 체계적인 단계를 거쳐야 합니다. 우선 자신이 찾고자 하는 목적에 부합하는 플랫폼을 선정</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0174.html">구로 홈페이지 빌더 전문 분석으로 본 마곡 가라오케 추천정보 대조</a>
+        <p class="post-item__summary">디지털 인프라를 구축하는 구로 홈페이지 빌더 전문 기업의 시각에서 보면, 마곡 지역의 가라오케를 선택하는 과정은 크게 두 가지 대조적인 선택지로 나뉩니다. 첫 번째는 시스템의 편의성과 인프라를 강조</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0175.html">구로 홈페이지 빌더 전문 노하우로 마곡 유흥 추천정보 예약하기</a>
+        <p class="post-item__summary">예약 과정에서 발생하는 오류를 분석해 보면 많은 사용자가 실패하는 지점은 사전에 정보를 충분히 확인하지 않는다는 점입니다. 구로 홈페이지 빌더 전문 영역에서 설계를 철저히 하지 않으면 결과물이 나오</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0176.html">구로 홈페이지 빌더 전문 관점의 합정 노래방 추천정보 확인법</a>
+        <p class="post-item__summary">합정 지역의 다양한 시설을 평가할 때는 구로 홈페이지 빌더 전문적 기준을 적용하여 체크리스트를 작성하는 것이 현명합니다. 무엇보다 중요한 것은 물리적인 위치와 접근성인데, 대중교통 이용 여부나 인근</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0228.html">구로 홈페이지 빌더 전문 활용한 합정 트렌드 서포터 가이드</a>
+        <p class="post-item__summary">과연 당신은 신뢰할 수 있는 정보를 찾기 위해 얼마나 노력하고 있습니까? 구로 홈페이지 빌더 전문 업체를 선정할 때 다양한 기준을 따져보듯, 즐거운 밤을 위한 장소 선택도 신중해야 합니다. 잘못된 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0229.html">구로 홈페이지 빌더 전문 활용하여 신뢰도 높은 셔츠룸 사이트 정보 확인하기</a>
+        <p class="post-item__summary">디지털 환경에서 비즈니스 플랫폼을 구축할 때 구로 홈페이지 빌더 전문 기술을 활용하는 사례가 늘고 있습니다. 단순히 틀을 만드는 것을 넘어 데이터의 무결성을 확보하는 것이 중요합니다. 특히 유흥 서</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
